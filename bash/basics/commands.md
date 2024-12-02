@@ -129,7 +129,7 @@ free # Display memory usage
 free -h # Display memory usage in a human-readable format
 ```
 
-## Networking
+## Network
 
 ```bash
 ping host # Send ICMP ECHO_REQUEST packets to a host
@@ -141,7 +141,6 @@ whois domain # Retrieve WHOIS information for a domain
 
 ```bash
 type command # Display information about a command
-which command # Display the path to
 help command # Display help informatio
 command --help # Display help information
 man command # Display the manual page for a command
@@ -227,9 +226,7 @@ tee file.txt # Redirect standard input to a file and standard output
 Use stdin redirection to read input from a file, for example:
 
 ```bash
-while read line; do
-    echo $line
-done < file.txt
+gzip < file.txt > file.gz # Creates file.gz file without remove the original file.txt
 ```
 
 ## Sync and Async Commands
@@ -243,10 +240,39 @@ command1 & command2 && command3 # Run command1 in the background and command2 se
 command1 && command2 & command3 # Run command1 sequentially and command2 in the background
 ```
 
+## Security
+
+```bash
+pwd # Change password
+su user # Change session to specified user
+sudo command # Execute command as root
+sudo su # Change to root user
+```
+
+## Search and Count
+
+```bash
+which command # Display the path to bin
+find route -name file # Find file name in directory
+find route -name *.txt # Find file with wildcard in directory
+find route -type fd -name file/dir # Find files and directories by type
+find route -size 50M # Find files by size
+grep pattern file # Search pattern into a file
+grep -i pattern file # Search pattern into a file ignoring case sensitive
+grep -c pattern file # Count number of occurrence
+grep -v pattern file # Search all that not match the pattern
+wc file # Count words in the file
+wc -l file
+wc -w file
+wc -c bites
+```
+
 ## More
 
 ```bash
+whoami # Display current user
 history # Display the command history
 history | grep command # Search the command history for a specific command
 alias l='foo command' # Create an alias for a command
+ln -s source dest # Create a symbolic link from source to destination
 ```
