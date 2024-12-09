@@ -262,9 +262,9 @@ grep -i pattern file # Search pattern into a file ignoring case sensitive
 grep -c pattern file # Count number of occurrence
 grep -v pattern file # Search all that not match the pattern
 wc file # Count words in the file
-wc -l file
-wc -w file
-wc -c bites
+wc -l file # Count lines in the file
+wc -w file # Count words in the file
+wc -c bites file # Count characters in the file
 ```
 
 ## More
@@ -275,4 +275,5 @@ history # Display the command history
 history | grep command # Search the command history for a specific command
 alias l='foo command' # Create an alias for a command
 ln -s source dest # Create a symbolic link from source to destination
+ln source dest # Create a hard link from source to destination
 ```
