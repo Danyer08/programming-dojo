@@ -1,0 +1,11 @@
+# Base image for the image, this is the image that will be used to create the new image
+FROM nginx:1.19.0-alpine
+
+# Copy the files from the dist folder to the Nginx folder
+COPY ./dist /usr/share/nginx/html
+
+# Expose the port 80 to the outside world
+EXPOSE 80
+
+# This line ensures that the container runs the Nginx server in the foreground
+CMD ["nginx", "-g", "daemon off;"]
