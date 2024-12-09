@@ -1,12 +1,12 @@
 # Programming Dojo
 
+Dojo for training and play with multiple programming languages, and technologies.
+
 ## Index
 
 - [Bash](./bash/)
 - [Lua](./lua/)
 - [Docker](./docker/)
-
-Dojo for training and play with multiple programming languages, and technologies.
 
 ## Languages
 

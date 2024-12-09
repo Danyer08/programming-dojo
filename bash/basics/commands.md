@@ -1,5 +1,27 @@
 # Basic Bash Commands
 
+## Table of Contents
+
+- [List files and directories](#list-files-and-directories)
+- [Navigation](#navigation)
+- [File Manipulation](#file-manipulation)
+- [File Viewing](#file-viewing)
+- [Wildcards](#wildcards)
+- [File Permissions](#file-permissions)
+- [Searching](#searching)
+- [Process Management](#process-management)
+- [System Information](#system-information)
+- [Network](#network)
+- [Commands Help](#commands-help)
+- [File Compression](#file-compression)
+- [File Transfer](#file-transfer)
+- [Text Processing](#text-processing)
+- [Output Redirection](#output-redirection)
+- [Sync and Async Commands](#sync-and-async-commands)
+- [Security](#security)
+- [Search and Count](#search-and-count)
+- [More](#more)
+
 ## List files and directories
 
 ```bash
