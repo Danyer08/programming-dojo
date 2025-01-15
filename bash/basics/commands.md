@@ -175,6 +175,7 @@ whatis command # Display a one-line description of a command
 ```bash
 tar -cvf archive.tar file1 file2 # Create a tar archive
 tar -xvf archive.tar # Extract a tar archive
+tar -xjf archive.tar.bz2 # Extract a bzip2-compressed tar archive
 tar -zcvf archive.tar.gz file1 file2 # Create a gzip-compressed tar archive
 tar -zxvf archive.tar.gz # Extract a gzip-compressed tar archive
 tar -jcvf archive.tar.bz2 file1 file2 # Create a bzip2-compressed tar archive
