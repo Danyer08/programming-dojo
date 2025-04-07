@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Node",
+      "type": "node",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/app.ts",
+      "preLaunchTask": "npm run build",
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
+      "runtimeArgs": [
+        "--inspect-brk=9229"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: dev",
+      "request": "launch",
+      "command": "pnpm run dev",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

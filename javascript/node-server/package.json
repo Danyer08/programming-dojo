@@ -1,0 +1,30 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "Simple node server for testing",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/app.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'tsx' src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "test"
+  ],
+  "author": "Danyer Dominguez",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.2",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "nodemon": "^3.1.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
